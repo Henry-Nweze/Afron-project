@@ -1,14 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto+Slab:wght@300&display=swap');
 
+/*--Body--*/
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', PT+Sans+Narrow;
+    color: #000000;
+}
+/*Navigation style---*/
+.navbar{
+    padding: .8rem;
+}
+.navbar-nav li{
+    padding-right: 60px;
+}
+.nav-link{
+    font-size: 1.1em !important;
+}
+/*--Carousel image style--*/
+.carousel-inner img{
+    width: 100%;
+    height: 100vh;
+}
+/*--Carousel caption style--*/
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
 
+/*--Caption h1 style--*/
+.carousel-caption h1{
+    font-size: 400%;
+    font-weight: 400;
+    text-shadow: 1px 1px 10px #1404F5;
+}
 
+/*--Caption p style--*/
+.carousel-caption p {
+   font-family: 'Montserrat', Roboto+Slab ;
+   font-size: 150%;
+   font-weight: 300;
+   padding-top: 5px;
+   text-shadow: 1px 1px 10px #000;
+   padding-bottom: 1rem;
+}
+/*--control prev, next style*/
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+}
 
+/*--button style--*/
+.btn {
+    background-color: #1404F5;
+    border-radius: 1px solid #fff;
+}
 
-
-
-
-
-
+/*--btn hover--*/
+btn:hover{
+    background-color: #1404F5;
+    border-radius: 1px solid #fff;
+}
 
 /*---Media Queries ---*/
 @media (max-width:992px) {
@@ -23,17 +78,19 @@
 
 }
 
-/*--Firefox Bug Fix ---*/
+<!--Firefox Bug Fix-->
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
     transition: transform 0.5s ease;
     transition: transform 0.5s ease, webkite-tranform 0.5s ease;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
+    opacity: 0.5rem;
 }
 
 
-/*---Fixed Background Image--*/
+
+<!--Fixed Background Image-->
 figure {
     position: relative;
     width: 100%;
@@ -66,7 +123,7 @@ figure {
 
 }
 
-/*--Bootstrap Padding Fix ---*/
+<!--Bootstrap Padding Fix-->
 [class*="col-"] {
     padding: 1rem;
 }
